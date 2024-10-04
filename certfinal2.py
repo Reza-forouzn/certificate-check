@@ -15,10 +15,10 @@ def verify_ssl_certificate(hostname):
 
 def send_email(subject, body):
     port = 587
-    smtp_server = "mail.kian.digital"
-    sender_email = "devops-certificates@kian.digital"
-    receiver_email = ["devops@kian.digital"]
-    password = "H9KtiVI42xjcWoQCSQZD"
+    smtp_server = "mail.mail"
+    sender_email = "email@email"
+    receiver_email = ["email@email"]
+    password = "password"
 
     message = f"Subject: {subject}\n\n{body}"
     context = ssl.create_default_context()
@@ -29,7 +29,7 @@ def send_email(subject, body):
         server.sendmail(sender_email, receiver_email, message)
 
 
-hn = ["kianbusiness.com","levants.io","reg.khobregan.levants.io","reg.oil.levants.io","irancr.com","pwa.kiandigital.com","landing.neshanid.com","neshanid.io","gitlab.kian.digital","kiangroup.com","bt.sivacrm.com","demo.sivacrm.io","kian.finance","kian.trade","kian.capital"]
+hn = ["comma seprated usrls"]
 lhn = len(hn)
 
 for i in range (0,lhn):
